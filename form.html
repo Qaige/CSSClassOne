@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validateForm(){
+                let a = document.forms["biodata"][name]
+                if (a == "") {
+                    alert("Name cannot be empty");
+                }
+            }
+        </script>
+    </head>
+   Form page
+   <body>
+    <h2> Enter Biodata </h2>
+    <form name="biodata" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <fieldset>
+        <legend>BIODATA FORM</legend>
+        <label for"name">First Name</label>
+        <input type="text" name="Name" id="name" placeholder="First Name" required>
+        <label for"name">Middle Name</label>
+        <input type="text" name="Name" id="name" placeholder="Middle Name" required>
+        <label for"name">Last Name</label>
+        <input type="text" name="Name" id="name" placeholder="Last Name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="email" placeholder="Enter Email Address" required>
+        <br>
+        <label for="PhoneNum">Phone Number</label>
+        <input type="tel" name="PhoneNum" id="PhoneNum" placeholder="Enter Phone Number" >
+        <br>
+        <label for="gender">Male</label>
+        <input type="checkbox" name="gender" id="gender" value="male">
+        <label for="gender">Female</label>
+        <input type="checkbox" name="gender" id="gender" value="female">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="pword" id="pword" placeholder="Enter Password" required>
+        <br>
+        <input type="button" value="Submit" onclickFunction()">
+        </fieldset>
+        
+    </form>
+    
+</body>
+
+
+</html>
